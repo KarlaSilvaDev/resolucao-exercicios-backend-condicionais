@@ -10,6 +10,7 @@ const limiteMeses = 60; //limite de meses para o pagamento. Se for maior que 60 
 //Parcela
 let parcelaEmReais = 0;
 let valorRestanteEmReais = ((valorCurso - totalJaPagoPeloAluno)/100);
+
 //CONDIÇÃO PARA PAGAR
 if ((rendaMensalEmCentavos>rendaLimite)&&(mesesDecorridos<=limiteMeses)&&(totalJaPagoPeloAluno<valorCurso)){
     parcelaEmReais =(0.18*rendaMensalEmCentavos)/100; 
